@@ -1,0 +1,151 @@
+
+
+
+JAVA IS ONE OOPL
+
+
+OOPS:
+		1)INHERITANCE
+		2)POLYMORPHISAM				-->oopl--->java,c++,python,.net....
+		3)ENCAPSULATION
+		4)ABSTRACTION
+
+
+JAVA -->20		:James Gosling
+
+
+		sun micro system	--1996 -->oracle corporation
+
+
+
+Execution FLow :
+=================
+	
+		.py
+		.java,.html......
+
+
+53 
+
+11 
+'
+JDK--->JRE--->JVM
+
+
+translation:
+
+Compailation:Compailer		javac filename.java
+
+	
+
+
+	user language-->machine language
+	
+	.java-->class
+	
+	source --->byte code 
+
+
+.class --->JVM   java classname 
+
+
+Identifiers:
+===========
+any name in java will call it as identifier  
+
+
+		a-z
+		A-Z
+		0-9
+		_
+		$
+
+	age123
+	123age 
+
+
+
+
+variables:
+==========
+		sandeep trainer 92346237947239
+
+
+syntax:
+	
+		datatype varname=value;
+		
+PDT  		NPDT
+
+			String,array,...
+
+
+numeric data:age,salary,contact,aadhar,accno.....
+
+byte  	 1 byte     -128 to 127
+short	 2 bytes	-32768 to 32767
+int		 4 bytes 	-2147483648 to 2147483647
+long	 8 bytes	-2 power 63  to (2 power 63)- 1				long aadhar			byte age  =32;
+
+decimal
+
+float 	 4 bytes				float salary=23.543832792379012f;
+double	 8 bytes				double calci=34.234001929001211;
+
+char	 2 bytes		'M'
+boolean	 1 bit		true-1,false-0
+
+
+
+	variables:
+	
+			1)local			inside the  method 
+			2)global		outside the method and with in the class
+			
+					instance / static
+
+
+	syntax:
+	=======
+	static int countryCode=91;  //4
+			int emid=123;		//4
+	
+	memory:
+	=======
+	static properties will get memory space only once at the time of class loading into JVM
+	instance properties will get memory space for every object creation 
+						class A
+						
+						classname objname=new classname()
+	
+	Access:
+	=======
+			static properties can be accessed by using classname 
+			instance properties can be accessed by using  objref
+	
+	Usage:
+	=======
+			for common data like countryCode,clg name,schoolname....will use static
+			for unique data like accno,aadhar no,contact no....will use instance
+	
+
+Platform Independent:
+=====================
+		oracle 							microsoft			
+
+		java(WORA)								.net
+
+
+	trainer machine windows11
+		java app
+			.class
+
+machine1   machine2   machine n
+linux		 windows	ubuntu
+
+
+
+
+
+
+
