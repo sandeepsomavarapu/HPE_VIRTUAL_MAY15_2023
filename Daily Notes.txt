@@ -145,6 +145,112 @@ linux		 windows	ubuntu
 
 
 
+ArithematicException---->JVM-->throw ...
+
+a>b
+a==b
+a/b
+
+throw new ArithematicException("")
+
+
+user defined exception classes 
+
+
+class InvalidCredentials extends Exception/RuntimeException/Throwable 
+
+{
+InvalidCredentials(String message)
+{
+
+super(message)
+
+}
+
+
+}
+
+
+save the data 
+				java app-->files--->write,read...			
+
+databases
+
+
+		Streams--->flow of data 
+		
+		
+		
+		java.io package    File
+		
+		1)character stream :PrintWriter,BufferedReader
+		2)byte stream	   :FileOutputStream,FileInputStream
+		3)data stream	   :DataInputStream,DataOutputStream
+		4)buffered stream  :BufferedOutputStream,BufferedInputStream
+		5)object stream    :ObjectOutputStream,ObjectInputStream
+		
+		
+		Serialization and deserilaization
+		
+		
+Multi Threading:
+================
+
+Multi Tasking:
+=============		
+executing several tasks simultaniously 
+
+		1)Process based multi tasking
+			executing several tasks simultaniously where each task is seprate indipendent process
+				
+					ex:teams,notepad,eclipse......
+					
+		2)thread based multi tasking 
+		
+			executing several tasks simultaniously where each task belongs to same process
+					
+		
+		
+		Process :group of threads
+		thread  : a smallest unit of process
+		
+		
+		
+		class Test
+		{
+		
+			segment-1		2 hours
+			
+			
+			
+			segment-2
+			
+			
+			
+			segment-3
+		
+		
+		
+			segment-n
+		
+		
+		
+		
+		}
+		
+		Two ways to create thread 
+		
+		1)implements Runnable
+		
+		2)extends Thread
+		
+		
+		
+		Functional Interface--->SAM		Runnable	
+		Marker Interface---->0 methods	Serializable
+			interface --->1-n
+
+
 
 
 
