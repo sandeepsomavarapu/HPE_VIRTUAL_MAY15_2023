@@ -251,7 +251,160 @@ executing several tasks simultaniously
 			interface --->1-n
 
 
+synchronization:
+================
+
+synchronized
+				synchronized,	not synchronized
+
+	immutable			muttable
+	String		,StringBuffer,StringBuilder-->java.lang-->group of  chars 
+
+					ArrayList,Vector
+					Hashmap ,HashTable...
+public void m1()
+{
+
+	..reading....   no thread safety
+
+}
+							t1,t2,t3,t4......
+
+public synchronized void m2()
+{
+...t1 -2000
+					thready safety
+
+}
+
+https://www.javamadesoeasy.com/2015/03/thread-states-thread-life-cycle-in-java.html
 
 
+InterThread Communication:
+=========== ==============
+wait,notify,notifyAll
+	sleep-->Thread
+	wait--->java.lang.Object
+
+
+
+			1-100
+	even thread-->even numbers
+	odd thread -->odd numbers
+		
+1,2,3,4,5,6,7....100	
+
+
+			even-->wait --2
+
+			odd-->1-->wait(),notify
+
+
+
+
+1,2,3,4,5,6,7----->100
+
+
+Limitations:
+
+	developer need to create threads
+	
+	Runnable
+	Thread
+	Callable 
+	
+	
+	void run() throws  unchekced 
+	{
+	
+	
+	}
+	
+	ExecutorService
+	
+	ThreadPool-->collections of threads 
+	
+	
+	COLLECTIONS:
+	===========
+	
+		int marks=300;
+			marks=350;
+	
+	
+	Arrays:
+	=======
+		group of values
+		
+		int arr[]={12,23,34,534,634,55};
+		
+		index -  0,1,2,3,4,5,6,7,8
+	
+	arr[6]-->AIO
+	Limitations Arrays:
+	==================
+	1)arrays are fixed in size  -->AIO
+	
+	2)arrays can hold only homogeneous data 
+	
+	3)no utility methods 
+	
+	
+	
+	Advantages With COLLECTIONS:
+	============================
+	
+	1)collections are not fixed in size 
+	
+	2)collections can hold both homogeneous  and heterogeneous data 
+	
+	3)lots of utility methods 
+	
+
+
+List:
+
+	1)duplicates are allowed 
+	2)insertion order is preserved 
+	
+	
+	
+	Map interface not child to Collection
+	
+	key,value-->pair -->Entry
+	
+	key can be any DT		key must be uniqe
+	value can be any DT		value can be duplicate
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
 
 
