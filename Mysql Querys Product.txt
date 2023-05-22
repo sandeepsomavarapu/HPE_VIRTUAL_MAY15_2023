@@ -1,0 +1,37 @@
+create database ericsson;
+use ericsson;
+create table products(pid int,pname varchar(20),price int,category varchar(20));
+describe products_info;
+alter table products add expirydate date;
+alter table products drop expirydate;
+alter table products change pid productId int;
+alter table products rename to products_info;  #renaming table name 
+truncate table products; #complete data/rows/records will be deleted
+drop table products; #entire table will get deleted
+
+insert into products values(111,"samsung",9000,"electronics");
+insert into products values(112,"dell",19000,"electronics");
+insert into products values(113,"lenovo",29000,"electronics");
+insert into products values(114,"intel",40000,"electronics");
+insert into products values(115,"apple",45000,"electronics");
+insert into products(pid,pname)values(222,"logitech");
+select * from products;
+update products set price=2000 where pid=114;
+delete from products where pid=111; 
+select max(price) from products;
+select min(price) from products;
+select avg(price) from products;
+select sum(price) from products;
+select * from products order by pname asc;# desc
+
+select * from products where price between 10000 and 20000;
+select * from products where price>15000;
+
+#contraints rule    notnull,check,unique,pk,fk
+
+create table emp(eid int ,ename varchar(10) not null);
+describe emp2;
+insert into emp(eid) values(222);
+create table emp1(eid int unique,ename varchar(10) not null);
+create table emp2(eid int primary key,ename varchar(10) not null);
+insert into emp1 values(1,"suresh");
